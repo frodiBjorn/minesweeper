@@ -1,17 +1,27 @@
-export function createBoard(cellsCount, MINE_COUNT) {
-    const CELL_BORDER_WIDTH = 1;
-    const CELL_WIDTH = 50;
-    const CELL_HEIGHT = 50;
-    const BOARD = document.createElement("div");
-    BOARD.style.width = `${CELL_WIDTH * 10 + 20}px`;
+export function createBoardByParameters(parameters) {
+    if(!(parameters instanceof BoardParameters)){
+        throw new Error('Invalid Parameters');
+    }
 
-    for (let i = 0; i < cellsCount; i++) {
+    const BOARD = document.createElement("div");
+    BOARD.classList.add("board");
+
+
+    for (let i = 0; i < parameters.cellsCount; i++) {
         const cell = document.createElement("div");
         cell.classList.add("cell");
-        cell.style.width = `${CELL_WIDTH}px`;
-        cell.style.height = `${CELL_HEIGHT}px`;
+        cell.style.width = `${parameters.cellWidth}px`;
+        cell.style.height = `${parameters.cellHeight}px`;
 
         BOARD.append(cell);
     }
     return BOARD;
+}
+
+export class BoardParameters {
+    constructor(cellWidth, cellHeight, cellsCount) {
+        this.cellWidth = cellWidth;
+        this.cellHeight = cellHeight;
+        this.cellsCount = cellsCount;
+    }
 }
