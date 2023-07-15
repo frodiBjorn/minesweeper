@@ -185,6 +185,7 @@ select:focus {
 }
 
 .face {
+    background-image: url('./assets//Doom_Normal.PNG');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
