@@ -50,7 +50,7 @@ export const gameOver = (win) => {
     clearScore();
     clearTime();
     createBoard(LEVEL_DROPDOWN.value);
-    FACE.style.backgroundImage = 'url(./assets/Doom_Normal.png)';
+    FACE.style.backgroundImage = 'url(./assets/DoomNormal.png)';
 
     MODAL.remove();
   });
