@@ -1,23 +1,40 @@
-export const CELLS_COUNT_EASY = 100;
-export const CELLS_COUNT_MEDIUM = 225;
-export const CELLS_COUNT_HARD = 625;
-
-export const MINE_COUNT_EASY = 10;
-export const MINE_COUNT_MEDIUM = 50;
-export const MINE_COUNT_HARD = 99;
-
-// export const LEVEL_EASY = 1;
-// export const LEVEL_MEDIUM = 2;
-// export const LEVEL_HARD = 3;
-export const Levels = {
-    easy: "Easy",
-    medium: "Medium",
-    hard: "Hard",
+export const CellsCount = {
+  easy: 100,
+  medium: 225,
+  hard: 625,
+};
+export const MineCount = {
+  easy: 10,
+  medium: 50,
+  hard: 99,
 };
 
-export const CELLS_WIDTH_EASY = 50;
-export const CELLS_HEIGHT_EASY = 50;
-export const CELLS_WIDTH_MEDIUM = 33.3;
-export const CELLS_HEIGHT_MEDIUM = 33.3;
-export const CELLS_WIDTH_HARD = 20;
-export const CELLS_HEIGHT_HARD = 20;
+export const Levels = {
+  easy: 'Easy',
+  medium: 'Medium',
+  hard: 'Hard',
+};
+export const CellsWidth = {
+  easy: 50,
+  medium: 33.3,
+  hard: 20,
+};
+export const CellsHeight = {
+  easy: 50,
+  medium: 33.3,
+  hard: 20,
+};
+export const NumberColor = {
+  one: 'blue',
+  two: 'green',
+  three: 'red',
+  four: '#130d4f',
+  five: 'brown',
+  six: '#1ab4c2',
+  seven: '#000',
+  eight: '#fff',
+};
+export const Settings = {
+  theme: 'light',
+  volume: true,
+};
