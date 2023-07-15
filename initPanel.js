@@ -35,7 +35,7 @@ export const initPanel = () => {
 
   TIME.textContent = '0';
   SCORE.textContent = 0;
-  FACE.style.backgroundImage = 'url(/assets/Doom_Normal.PNG)';
+  FACE.style.backgroundImage = 'url(./assets/Doom_Normal.png)';
   START.textContent = 'New game';
   VOLUME.textContent = 'Volume';
 
