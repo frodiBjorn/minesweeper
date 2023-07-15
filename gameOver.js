@@ -26,7 +26,7 @@ export const gameOver = (win) => {
     MODAL_TEXT.textContent = `You are the best! Your score: ${SCORE.textContent}, time: ${TIME.textContent}`;
     winSound.play();
   } else {
-    FACE.style.backgroundImage = 'url(./assets/doomcry45.png)';
+    FACE.style.backgroundImage = 'url(./assets/Doom45.png)';
     MODAL_TITLE.textContent = 'Game Over';
     MODAL_TEXT.textContent = `You hit a mine. Better luck next time! Your score: ${SCORE.textContent}, time: ${TIME.textContent}`;
     gameOverSound.play();

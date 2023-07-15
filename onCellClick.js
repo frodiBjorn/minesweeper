@@ -16,10 +16,10 @@ export const onCellClick = (cell) => {
     if (!cell.classList.contains('show') && cell.tagName !== 'SPAN') {
       SCORE.textContent = parseInt(SCORE.textContent) + 1;
       if (parseInt(SCORE.textContent) > 10) {
-        FACE.style.backgroundImage = 'url(./assets/DoomGuy74.png)';
+        FACE.style.backgroundImage = 'url(./assets/Doom74.png)';
       }
       if (parseInt(SCORE.textContent) > 25) {
-        FACE.style.backgroundImage = 'url(./assets/doomguy31.png)';
+        FACE.style.backgroundImage = 'url(./assets/Doom31.png)';
       }
     }
 
